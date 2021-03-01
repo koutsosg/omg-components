@@ -1,11 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo1 from "./logo.svg";
+import "./App.css";
+import "semantic-ui-css/semantic.min.css";
+import Header1 from "./components/Header1";
 function App() {
   return (
     <div className="App">
+      <Header1 />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo1} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>

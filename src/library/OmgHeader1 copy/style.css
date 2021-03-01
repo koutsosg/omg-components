@@ -1,0 +1,13 @@
+.gkc-navbar {
+  padding: 10px;
+  background-color: #fff;
+}
+.gkc-navbar_logo {
+  height: 30px;
+}
+.gkc-navbar_nav {
+  background: #000;
+}
+.omg-navbar_nav-slink {
+  flex-direction: unset;
+}
