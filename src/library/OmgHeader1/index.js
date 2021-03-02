@@ -27,7 +27,7 @@ import "./style.css";
  * @param {string} props.slinks.icon
  * @param {string} props.slinks.url
  */
-const OmgHeader1 = ({
+const OmgServices1 = ({
   logo,
   links,
   website,
@@ -80,4 +80,4 @@ const OmgHeader1 = ({
   );
 };
 
-export default OmgHeader1;
+export default OmgServices1;

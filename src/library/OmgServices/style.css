@@ -1,0 +1,60 @@
+.omg-serv {
+}
+.omg-serv_img {
+  z-index: -1;
+  transition: transform 0.2s; /* Animation */
+}
+.omg-serv_img:hover {
+  transform: scale(
+    1.1
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.omg-serv_img2 {
+  overflow: hidden;
+}
+.omg-serv_img2:hover {
+  overflow: hidden;
+}
+.omg-serv_icon {
+  padding: 5px;
+  margin-top: -25%;
+  border-radius: 50%;
+
+  z-index: 1;
+  color: white;
+  background-color: #747474;
+}
+.omg-serv_header {
+  font-size: calc(5px + 2vmin);
+  text-align: left;
+}
+
+.omg-lines {
+  content: "";
+  height: 4px;
+  width: 30px;
+  background: #747474;
+  display: inline-block;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+.btwline {
+  font-weight: 700;
+  font-size: calc(5px + 2vmin);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin: auto;
+  padding: 20px;
+
+  color: #a7a8ae;
+}
+.omg-subtitle {
+  font-size: calc(10px + 2vmin);
+}
+.omg-service_head {
+  font-size: calc(10px + 1vmin);
+}

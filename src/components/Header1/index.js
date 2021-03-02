@@ -1,6 +1,6 @@
 import React from "react";
 import OmgHeader1 from "../../library/OmgHeader1";
-import logo from "../../logo.svg";
+import logo from "../../assets/logo.svg";
 import "./style.css";
 
 const website = "website title";
@@ -35,6 +35,7 @@ const links = [
     text: "Home",
     url: "/",
   },
+
   {
     text: "About",
     url: "/about",
