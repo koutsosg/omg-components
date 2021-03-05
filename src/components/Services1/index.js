@@ -8,12 +8,12 @@ import "./style.css";
 
 /* font Awesome icons */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircle } from "@fortawesome/free-solid-svg-icons";
-import { faSink } from "@fortawesome/free-solid-svg-icons";
+import { faDiceD20 } from "@fortawesome/free-solid-svg-icons";
+/* import { faSink } from "@fortawesome/free-solid-svg-icons";
 import { faWrench } from "@fortawesome/free-solid-svg-icons";
 import { faToilet } from "@fortawesome/free-solid-svg-icons";
 import { faShower } from "@fortawesome/free-solid-svg-icons";
-
+ */
 const info = {
   title: "OUR SERVICES",
   subtitle: "Quality Service is Our Guarantee",
@@ -22,26 +22,27 @@ const info = {
 };
 
 const icons = {
-  serv1: faCircle /* faWrench */,
-  serv2: faCircle /* faSink */,
-  serv3: faCircle /* faToilet */,
-  serv4: faCircle /* faShower */,
+  serv1: faDiceD20 /* faWrench */,
+  serv2: faDiceD20 /* faSink */,
+  serv3: faDiceD20 /* faToilet */,
+  serv4: faDiceD20 /* faShower */,
   size: "4x",
 };
 /*  */
+
 const bcolor = "#f8f9fa";
 const classes = {
+  maindiv: "p-5",
+  container: "container",
   title: "btwline",
   subtitle: "",
   span: "omg-lines",
-  maindiv: "",
-  container: "",
-  row: "",
-  col: "",
-  coldiv: "",
+  row: "row",
+  col: " p-1 col-12 col-sm-6 col-md-3",
+  coldiv: "p-2",
   image: "",
-  header: "mr-auto",
-  parag: "",
+  header: "",
+  parag: "p-3 text-justify",
 };
 
 /* const cols = { xs: 6, sm: 12, md: 12 }; */

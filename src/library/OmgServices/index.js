@@ -1,28 +1,12 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
-import { Col, Container, Row } from "reactstrap";
+
 import "./style.css";
 
-const Services = ({
-  info = {},
-  fluid = false,
-  services,
-  cols = {},
-  color = "white",
-  classes = {},
-}) => {
-  cols = {
-    xs: 12,
-    sm: 6,
-    md: 3,
-    ...cols,
-  };
+const Services = ({ info = {}, services, color = "white", classes = {} }) => {
   return (
-    <div
-      style={{ backgroundColor: color }}
-      className={`${classes.maindiv} p-5`}
-    >
-      <Container fluid={fluid} className={`${classes.container} `}>
+    <div style={{ backgroundColor: color }} className={`${classes.maindiv}`}>
+      <div className={`${classes.container} `}>
         <h3 className={`${classes.title} `}>
           <span className={`${classes.span} `}></span>
           {info.title}
@@ -30,17 +14,20 @@ const Services = ({
         </h3>
 
         <h2 className={`${classes.subtitle} omg-subtitle`}>{info.subtitle}</h2>
-        <p style={{ paddingBottom: `1.75em` }} className={`${classes.parag} `}>
+        <p
+          style={{ paddingBottom: `1.75em` }}
+          className={`${classes.parag}  text-center`}
+        >
           {info.text}
         </p>
 
-        <Row className={`${classes.row} `}>
+        <div className={`${classes.row} `}>
           {services.map((service) => (
-            <Col {...cols} className={`${classes.col} p-1 omg-serv`}>
-              <div className="">
-                <div className={`${classes.coldiv} border p-2 omg-serv_img2`}>
+            <div className={`${classes.col} omg-serv`}>
+              <div className="border">
+                <div className={`${classes.coldiv}  omg-serv_img2`}>
                   <img
-                    className={`${classes.image} img-fluid omg-serv_img`}
+                    className={`${classes.image}  img-fluid omg-serv_img`}
                     src={service.img}
                     alt={service.title}
                   />
@@ -52,10 +39,10 @@ const Services = ({
                 </h2>
                 <p className={`${classes.parag} `}>{service.text}</p>
               </div>
-            </Col>
+            </div>
           ))}
-        </Row>
-      </Container>
+        </div>
+      </div>
     </div>
   );
 };

@@ -1,7 +1,6 @@
-.omg-serv {
-}
 .omg-serv_img {
-  z-index: -1;
+  position: relative;
+
   transition: transform 0.2s; /* Animation */
 }
 .omg-serv_img:hover {
@@ -16,23 +15,22 @@
   overflow: hidden;
 }
 .omg-serv_icon {
+  position: relative;
   padding: 5px;
   margin-top: -25%;
   border-radius: 50%;
 
-  z-index: 1;
   color: white;
   background-color: #747474;
 }
 .omg-serv_header {
   font-size: calc(5px + 2vmin);
-  text-align: left;
 }
 
 .omg-lines {
   content: "";
   height: 4px;
-  width: 30px;
+  width: 20px;
   background: #747474;
   display: inline-block;
   margin-top: auto;
