@@ -4,13 +4,16 @@ import "./index.css";
 import "semantic-ui-css/semantic.min.css";
 import { Divider } from "semantic-ui-react";
 import Header1 from "./components/Header1";
+import Header2 from "./components/Header2";
 import Services1 from "./components/Services1";
 import Services2 from "./components/Services2";
 import Footer1 from "./components/Footer1";
+
 function App() {
   return (
     <div className="App">
       <Header1 />
+      <Header2 />
       <Services1 />
       <Divider />
       <Services2 />

@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 import { Grid, Segment, Image } from "semantic-ui-react";
 
 const Services2 = ({ color, services, classes = {}, info = {} }) => {
@@ -18,7 +18,6 @@ const Services2 = ({ color, services, classes = {}, info = {} }) => {
           <Segment className={`${classes.services}`} placeholder>
             <Grid className={`${classes.maingrid}`} columns={2} stackable>
               <Grid.Column className={`${classes.gridleft}`}>
-                {" "}
                 <Image
                   className={`${classes.servimg}`}
                   src={service.img}

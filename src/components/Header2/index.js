@@ -1,5 +1,5 @@
 import React from "react";
-import OmgHeader1 from "../../library/OmgHeader1";
+import OmgHeader2 from "../../library/OmgHeader2";
 import logo from "../../assets/logo.svg";
 import "./style.css";
 
@@ -12,11 +12,11 @@ const classes = {
   toggler: "",
   togglerspan: "",
   collapse: "",
-  nav: "mr-auto",
+  nav: "shadow-none bg-light navbar-nav my-auto mr-auto border-0",
   navitem: "",
-  navlink: "p-2",
-  snav: "",
-  snavitem: "mr-auto",
+  navlink: "border-0 ",
+  snav: " navbar-nav omg-navbar_nav_s",
+  snavitem: " p-2 nav-item",
   snavlink: "p-2",
   sicon: "",
 };
@@ -24,11 +24,19 @@ const links = [
   {
     text: "Home",
     url: "/",
+    submenu: [
+      { text: "hello", url: "/" },
+      { text: "world", url: "/" },
+    ],
   },
 
   {
     text: "About",
     url: "/about",
+    submenu: [
+      { text: "hello", url: "/" },
+      { text: "world", url: "/" },
+    ],
   },
   {
     text: "Services",
@@ -67,10 +75,10 @@ const slinks = [
   },
 ];
 
-const Header1 = () => {
+const Header2 = () => {
   return (
     <>
-      <OmgHeader1
+      <OmgHeader2
         logo={logo}
         links={links}
         slinks={slinks}
@@ -81,4 +89,4 @@ const Header1 = () => {
   );
 };
 
-export default Header1;
+export default Header2;

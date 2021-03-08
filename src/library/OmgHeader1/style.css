@@ -8,6 +8,6 @@
 }
 
 .omg-navbar_nav_s {
-  display: inline-flex;
-  flex-direction: row;
+  display: inline-flex !important;
+  flex-direction: row !important;
 }

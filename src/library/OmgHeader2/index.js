@@ -1,15 +1,7 @@
 import React, { useState } from "react";
-import { Icon } from "semantic-ui-react";
 
-import {
-  Collapse,
-  Nav,
-  /*  Navbar,
-  NavbarBrand,
-  NavbarToggler, */
-  NavItem,
-  NavLink,
-} from "reactstrap";
+import { Dropdown, Menu, Icon } from "semantic-ui-react";
+import { Collapse } from "reactstrap";
 import "./style.css";
 
 /**
@@ -26,7 +18,7 @@ import "./style.css";
  * @param {string} props.slinks.icon
  * @param {string} props.slinks.url
  */
-const OmgHeader1 = ({ logo, links, website, slinks, classes = {} }) => {
+const OmgHeader2 = ({ logo, links, website, slinks, classes = {} }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen((prev) => !prev);
@@ -56,38 +48,50 @@ const OmgHeader1 = ({ logo, links, website, slinks, classes = {} }) => {
       >
         <span className={`${classes.toggler} navbar-toggler-icon`}></span>
       </button>
-
       <Collapse className={`${classes.toggler}`} isOpen={isOpen} navbar>
-        <Nav className={`${classes.nav} omg-navbar_nav_link`} navbar>
-          {links.map((link) => (
-            <NavItem className={`${classes.navitem}`}>
-              <NavLink className={`${classes.navlink}`} href={link.url}>
-                {link.text}
-              </NavLink>
-            </NavItem>
-          ))}
-        </Nav>
-        <Nav className={`${classes.snav} omg-navbar_nav_s`} navbar>
-          {slinks.map((slink) => (
-            <NavItem className={`${classes.snavitem}`}>
-              <NavLink
-                className={`${classes.snavlink}`}
-                href={slink.url}
-                rel="noreferrer"
-                target="_blank"
+        <Menu className={`${classes.nav}`}>
+          {links.map((link) =>
+            !!link?.submenu ? (
+              <Dropdown
+                text={link.text}
+                pointing
+                className={`${classes.navlink} link item `}
               >
+                <Dropdown.Menu>
+                  {/*   <Dropdown.Header>{link.submenu.text}</Dropdown.Header> */}
+                  {link?.submenu?.map((subitem) => (
+                    <Dropdown.Item href={subitem.url}>
+                      {subitem.text}
+                    </Dropdown.Item>
+                  ))}
+                </Dropdown.Menu>
+              </Dropdown>
+            ) : (
+              <Menu.Item
+                href={link.url}
+                className={`${classes.navlink} link item `}
+              >
+                {link.text}
+              </Menu.Item>
+            )
+          )}
+        </Menu>
+        <div className={`${classes.snav}`}>
+          {slinks.map((slink) => (
+            <div className={`${classes.snavitem}`}>
+              <a href={slink.url} target="_blank" rel="noreferrer">
                 <Icon
                   className={`${classes.sicon}`}
                   circular
                   name={slink.icon}
                 />
-              </NavLink>
-            </NavItem>
+              </a>
+            </div>
           ))}
-        </Nav>
+        </div>
       </Collapse>
     </div>
   );
 };
 
-export default OmgHeader1;
+export default OmgHeader2;
