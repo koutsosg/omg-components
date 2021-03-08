@@ -27,7 +27,7 @@ import "./style.css";
  * @param {string} props.slinks.icon
  * @param {string} props.slinks.url
  */
-const OmgServices1 = ({ logo, links, website, slinks, classes = {} }) => {
+const OmgHeader1 = ({ logo, links, website, slinks, classes = {} }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen((prev) => !prev);
@@ -64,6 +64,16 @@ const OmgServices1 = ({ logo, links, website, slinks, classes = {} }) => {
             <NavItem className={`${classes.navitem}`}>
               <NavLink className={`${classes.navlink}`} href={link.url}>
                 {link.text}
+
+                {link?.submenu && (
+                  <div>
+                    {link?.submenu?.map((item) => (
+                      <NavLink className={`${classes.navlink}`} href={item.url}>
+                        {item.text}
+                      </NavLink>
+                    ))}
+                  </div>
+                )}
               </NavLink>
             </NavItem>
           ))}
@@ -87,4 +97,4 @@ const OmgServices1 = ({ logo, links, website, slinks, classes = {} }) => {
   );
 };
 
-export default OmgServices1;
+export default OmgHeader1;

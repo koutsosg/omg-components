@@ -1,13 +1,21 @@
-.omg-navbar {
-  padding: 10px;
-  background-color: #fff;
+/* .omg-container {
+  max-width: 1400px;
 }
-
-.omg-navbar_logo {
-  height: 50px;
+ */
+.titles {
+  margin-bottom: 60px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
 }
-
-.omg-navbar_nav_s {
-  display: inline-flex;
-  flex-direction: row;
+.titles:after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  bottom: -15px;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  background: #747474;
 }

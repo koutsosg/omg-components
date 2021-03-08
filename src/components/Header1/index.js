@@ -24,11 +24,16 @@ const links = [
   {
     text: "Home",
     url: "/",
+    /*   submenu: [
+      { text: "hello", url: "/" },
+      { text: "world", url: "/" },
+    ], */
   },
 
   {
     text: "About",
     url: "/about",
+    submenu: "",
   },
   {
     text: "Services",
