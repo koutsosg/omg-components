@@ -8,12 +8,13 @@ import Header2 from "./components/Header2";
 import Services1 from "./components/Services1";
 import Services2 from "./components/Services2";
 import Footer1 from "./components/Footer1";
-
+import Carousel from "./components/Carousel";
 function App() {
   return (
     <div className="App">
       <Header1 />
       <Header2 />
+      <Carousel />
       <Services1 />
       <Divider />
       <Services2 />
