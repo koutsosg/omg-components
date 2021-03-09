@@ -10,7 +10,7 @@ import service3 from "../../assets/logo.svg";
 const bcolor = "#f8f9fa";
 
 const classes = {
-  maindiv: "bg-light omg-maindiv",
+  maindiv: "bg-light omg-maindiv p-5",
   container: "container p-0",
   info: "omg-info",
   infoimg: "omg-info_img",

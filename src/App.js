@@ -9,6 +9,7 @@ import Services1 from "./components/Services1";
 import Services2 from "./components/Services2";
 import Footer1 from "./components/Footer1";
 import Carousel from "./components/Carousel";
+import Services3 from "./components/Services3";
 function App() {
   return (
     <div className="App">
@@ -19,6 +20,8 @@ function App() {
       <Divider />
       <Services2 />
       <Divider />
+      <Services3 />
+      <Divider></Divider>
       <Footer1 />
       <Divider />
       <Divider />
