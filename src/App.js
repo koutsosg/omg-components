@@ -13,7 +13,7 @@ import Services3 from "./components/Services3";
 import Backtotop from "./components/Backtotop";
 import Layout from "./components/LayoutSide/Layout";
 import { OmgNavigator } from "./library/OmgNavigator";
-
+import Index2 from "./index2";
 const Library = () => (
   <div className="App">
     <Header1 />
@@ -45,6 +45,7 @@ const Library = () => (
 const navLinks = [
   { to: "/", text: "Home" },
   { to: "/about", text: "About" },
+  { to: "/about", text: "About2" },
 ];
 const WebsiteContainer = (props) => (
   <>
@@ -54,7 +55,7 @@ const WebsiteContainer = (props) => (
 
 const links = [
   { to: "/", component: <Library /> },
-  { to: "/about", component: <p>test2</p> },
+  { to: "/about", component: <Index2 /> },
 ];
 
 function App() {

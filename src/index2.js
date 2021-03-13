@@ -14,33 +14,31 @@ import Backtotop from "./components/Backtotop";
 import Layout from "./components/LayoutSide/Layout";
 function Index2() {
   return (
-    <Layout>
-      <div className="App">
-        <Header1 />
-        <Header2 />
+    <div className="App">
+      <Header1 />
+      <Header2 />
 
-        <Carousel />
-        <Services1 />
-        <Divider />
+      <Carousel />
+      <Services1 />
+      <Divider />
 
-        <Divider />
-        <Backtotop />
-        <header className="App-header">
-          <img src={logo1} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    </Layout>
+      <Divider />
+      <Backtotop />
+      <header className="App-header">
+        <img src={logo1} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
 }
 
