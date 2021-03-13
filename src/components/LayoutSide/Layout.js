@@ -53,7 +53,7 @@ const slinks = [
   },
 ];
 
-const Layout = ({ children }) => {
+const Layout = ({ children, links }) => {
   return (
     <OmgLayoutSide
       logo={logo}
@@ -63,6 +63,7 @@ const Layout = ({ children }) => {
       imgback={imgback}
       classes={classes}
       slinks={slinks}
+      links={links}
     />
   );
 };

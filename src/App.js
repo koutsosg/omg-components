@@ -15,32 +15,41 @@ import Layout from "./components/LayoutSide/Layout";
 import { OmgNavigator } from "./library/OmgNavigator";
 
 const Library = () => (
-  <Layout>
-    <div className="App">
-      <Header2 />
-      <Carousel />
-      <Services1 />
-      <Divider />
-      <Services2 />
-      <Divider />
-      <Services3 />
-      <Divider></Divider>
-      <Footer1 />
-      <Divider />
-      <Divider />
-      <Divider />
-      <Backtotop />
-      <header className="App-header">
-        <img src={logo1} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a className="App-link" href="/index2" rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
-    </div>
-  </Layout>
+  <div className="App">
+    <Header1 />
+    <Header2 />
+    <Carousel />
+    <Services1 />
+    <Divider />
+    <Services2 />
+    <Divider />
+    <Services3 />
+    <Divider></Divider>
+    <Footer1 />
+    <Divider />
+    <Divider />
+    <Divider />
+    <Backtotop />
+    <header className="App-header">
+      <img src={logo1} className="App-logo" alt="logo" />
+      <p>
+        Edit <code>src/App.js</code> and save to reload.
+      </p>
+      <a className="App-link" href="/index2" rel="noopener noreferrer">
+        Learn React
+      </a>
+    </header>
+  </div>
+);
+
+const navLinks = [
+  { to: "/", text: "Home" },
+  { to: "/about", text: "About" },
+];
+const WebsiteContainer = (props) => (
+  <>
+    <Layout links={navLinks}>{props.children}</Layout>
+  </>
 );
 
 const links = [
@@ -48,18 +57,12 @@ const links = [
   { to: "/about", component: <p>test2</p> },
 ];
 
-const Showcase = () => (
-  <>
-    <Header1 />
-    <Library />
-  </>
-);
-
 function App() {
   return (
-    <OmgNavigator links={links}>
-      <Showcase />
-    </OmgNavigator>
+    <OmgNavigator
+      links={links}
+      container={(children) => <WebsiteContainer children={children} />}
+    />
   );
 }
 

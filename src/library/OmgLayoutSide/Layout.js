@@ -2,7 +2,9 @@ import React from "react";
 
 import "./style.css";
 import Social from "../OmgSocialSmall";
+import { Link } from "react-router-dom";
 const Layout = ({
+  links,
   slinks,
   classes = {},
   logo,
@@ -37,6 +39,11 @@ const Layout = ({
           >
             {website.quicklinkt}
           </a>
+          <hr />
+          {links.map((link) => (
+            <Link to={link.to}>{link.text}</Link>
+          ))}
+          <hr />
         </div>
         <footer className={`${classes.footer}`}>
           <Social classes={classes} slinks={slinks} />
