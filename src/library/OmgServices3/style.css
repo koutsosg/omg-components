@@ -10,13 +10,14 @@
 .omg-serv_img2:hover {
   overflow: hidden;
 }
-.omg-serv_icon {
+.omg-serv3_icon {
   position: relative;
   padding: 5px;
-  margin-top: -25%;
+
   border-radius: 50%;
 
   color: white;
+  background-color: #747474;
 }
 .omg-serv_header {
   font-size: calc(5px + 2vmin);
@@ -101,7 +102,7 @@
   border-color: #000000;
   border-width: 1px;
   padding: 1vh;
-  font-size: 2vw;
+  font-size: 1.3rem;
 }
 .omg-button:hover {
   background-color: #a9abac;
@@ -110,7 +111,7 @@
 }
 @media (max-width: 768px) {
   .omg-button {
-    font-size: 3vw;
+    font-size: 1rem;
   }
   .omg-button:hover {
     background-color: #a9abac;

@@ -3,7 +3,7 @@ import OmgServices3 from "../../library/OmgServices3";
 import service1 from "../../assets/logo.svg";
 import service2 from "../../assets/logo.svg";
 import service3 from "../../assets/logo.svg";
-import service4 from "../../assets/logo.svg";
+
 import "./style.css";
 
 /* font Awesome icons */
@@ -36,15 +36,14 @@ const classes = {
   topcontain: "container",
   title: "btwline",
   subtitle: "",
-  span: "omg-lines",
+
   container: "",
   row: "",
   col: "p-2",
   card: "card-flip card bg-light",
   cardfront: "card-front",
   cardfbody: "card-body m-auto",
-  sicon: "omg-serv_icon",
-
+  sicon: "omg-serv3_icon",
   header: "card-title",
   span: "omg-lines",
   parag: "p-3 text-justify",
@@ -54,7 +53,7 @@ const classes = {
   button: "omg-button",
 };
 
-/* const cols = { xs: 6, sm: 12, md: 12 }; */
+const cols = {};
 
 const services = [
   {
@@ -69,6 +68,48 @@ const services = [
         className={`${classes.sicon}`} /* pull="left" */
       />
     ),
+    button: {
+      variant: "secondary",
+      text: "Read More",
+      url: "/",
+    },
+  },
+
+  {
+    title: "Service 1",
+    text:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    img: service1,
+    sicon: (
+      <FontAwesomeIcon
+        icon={icons.serv1}
+        size={icons.size}
+        className={`${classes.sicon}`} /* pull="left" */
+      />
+    ),
+    button: {
+      variant: "secondary",
+      text: "Read More",
+      url: "/",
+    },
+  },
+  {
+    title: "Service 1",
+    text:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    img: service1,
+    sicon: (
+      <FontAwesomeIcon
+        icon={icons.serv1}
+        size={icons.size}
+        className={`${classes.sicon}`} /* pull="left" */
+      />
+    ),
+    button: {
+      variant: "secondary",
+      text: "Read More",
+      url: "/",
+    },
   },
   {
     title: "Service 2",
@@ -82,6 +123,12 @@ const services = [
         className={`${classes.sicon}`}
       />
     ),
+    button: {
+      variant: "secondary",
+      text: "Read More",
+      url: "/",
+    },
+    cols: { lg: 6 },
   },
   {
     title: "Service 3",
@@ -98,6 +145,12 @@ const services = [
         }} */
       />
     ),
+    button: {
+      variant: "secondary",
+      text: "Read More",
+      url: "/",
+    },
+    cols: { lg: 6, md: 12 },
   },
   /*  {
     title: "Service 4",
@@ -123,6 +176,7 @@ const Services3 = () => {
         info={info}
         services={services}
         classes={classes}
+        cols={cols}
       />
     </>
   );

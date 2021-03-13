@@ -10,10 +10,13 @@ import Services2 from "./components/Services2";
 import Footer1 from "./components/Footer1";
 import Carousel from "./components/Carousel";
 import Services3 from "./components/Services3";
-function App() {
-  return (
+import Backtotop from "./components/Backtotop";
+import Layout from "./components/LayoutSide/Layout";
+import { OmgNavigator } from "./library/OmgNavigator";
+
+const Library = () => (
+  <Layout>
     <div className="App">
-      <Header1 />
       <Header2 />
       <Carousel />
       <Services1 />
@@ -26,21 +29,37 @@ function App() {
       <Divider />
       <Divider />
       <Divider />
+      <Backtotop />
       <header className="App-header">
         <img src={logo1} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a className="App-link" href="/index2" rel="noopener noreferrer">
           Learn React
         </a>
       </header>
     </div>
+  </Layout>
+);
+
+const links = [
+  { to: "/", component: <Library /> },
+  { to: "/about", component: <p>test2</p> },
+];
+
+const Showcase = () => (
+  <>
+    <Header1 />
+    <Library />
+  </>
+);
+
+function App() {
+  return (
+    <OmgNavigator links={links}>
+      <Showcase />
+    </OmgNavigator>
   );
 }
 

@@ -5,10 +5,18 @@ import "./style.css";
 
 const OmgServices3 = ({
   info = {},
-  services,
+  services = {},
   color = "white",
   classes = {},
+  cols = {},
 }) => {
+  cols = {
+    xs: 12,
+    sm: 12,
+    md: 6,
+    lg: 4,
+    ...cols,
+  };
   return (
     <div style={{ backgroundColor: color }} className={`${classes.maindiv}`}>
       <div className={`${classes.topcontain} `}>
@@ -28,8 +36,15 @@ const OmgServices3 = ({
 
         <Container className={`${classes.container}`}>
           <Row className={`${classes.row}`}>
-            {services.map((service) => (
-              <Col xs={12} sm={12} md={6} lg={4} className={`${classes.col}`}>
+            {services.map((service, i) => (
+              <Col
+                {...cols}
+                /*  {...(services.length % 2 && i + 1 === services.length
+                  ? { xs: 12, sm: 12, md: 12 }
+                  : {})} */
+                {...(service?.cols ?? {})}
+                className={`${classes.col}`}
+              >
                 <div className={`${classes.card}`}>
                   <div className={`${classes.cardfront}`}>
                     <div className={`${classes.cardfbody}`}>
@@ -50,11 +65,11 @@ const OmgServices3 = ({
                         className={`${classes.image} `}
                       />
                       <Button
-                        href="/"
+                        href={service.button.url}
                         className={`${classes.button}`}
-                        variant="secondary"
+                        variant={service.button.variant}
                       >
-                        Secondary
+                        {service.button.text}
                       </Button>
                     </div>
                   </div>

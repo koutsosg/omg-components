@@ -11,6 +11,7 @@ import {
   NavLink,
 } from "reactstrap";
 import "./style.css";
+import { Link } from "react-router-dom";
 
 /**
  * A simple header navigation component with ReactStrap
@@ -61,12 +62,13 @@ const OmgHeader1 = ({ logo, links, website, slinks, classes = {} }) => {
         <Nav className={`${classes.nav} omg-navbar_nav_link`} navbar>
           {links.map((link) => (
             <NavItem className={`${classes.navitem}`}>
-              <NavLink className={`${classes.navlink}`} href={link.url}>
+              <Link className={`nav-link ${classes.navlink}`} to={link.url}>
                 {link.text}
-              </NavLink>
+              </Link>
             </NavItem>
           ))}
         </Nav>
+
         <Nav className={`${classes.snav} omg-navbar_nav_s`} navbar>
           {slinks.map((slink) => (
             <NavItem className={`${classes.snavitem}`}>
