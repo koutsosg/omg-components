@@ -10,7 +10,7 @@ import Services2 from "./OmgServices2";
 import Services3 from "./OmgServices3";
 import OmgSocialSmall from "./OmgSocialSmall";
 
-export default {
+export {
   ScrollTopArrow,
   OmgCarousel,
   OmgFooter1,
