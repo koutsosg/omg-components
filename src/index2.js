@@ -16,7 +16,6 @@ function Index2() {
   return (
     <div className="App">
       <Header1 />
-      <Header2 />
 
       <Carousel />
       <Services1 />
