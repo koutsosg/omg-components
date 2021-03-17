@@ -1,0 +1,13 @@
+.omg-navbar {
+  padding: 10px;
+  background-color: #fff;
+}
+
+.omg-navbar_logo {
+  height: 50px;
+}
+
+.omg-navbar_nav_s {
+  display: inline-flex !important;
+  flex-direction: row !important;
+}

@@ -1,0 +1,121 @@
+.omg-serv_img {
+  position: relative;
+
+  transition: transform 0.2s; /* Animation */
+}
+
+.omg-serv_img2 {
+  overflow: hidden;
+}
+.omg-serv_img2:hover {
+  overflow: hidden;
+}
+.omg-serv3_icon {
+  position: relative;
+  padding: 5px;
+
+  border-radius: 50%;
+
+  color: white;
+  background-color: #747474;
+}
+.omg-serv_header {
+  font-size: calc(5px + 2vmin);
+}
+
+.omg-lines {
+  content: "";
+  height: 4px;
+  width: 20px;
+  background: #747474;
+  display: inline-block;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+.btwline {
+  font-weight: 700;
+  font-size: calc(5px + 2vmin);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin: auto;
+  padding: 20px;
+
+  color: #a7a8ae;
+}
+.omg-subtitle {
+  font-size: calc(10px + 2vmin);
+}
+.omg-service_head {
+  font-size: calc(10px + 1vmin);
+}
+.card-flip > div {
+  backface-visibility: hidden;
+  transition: transform 500ms;
+  transition-timing-function: linear;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  min-height: 200px;
+}
+
+.card-front {
+  transform: rotateX(0deg);
+}
+
+.card-back {
+  transform: rotateX(180deg);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.card-flip:hover .card-front {
+  transform: rotateX(-180deg);
+}
+
+.card-flip:hover .card-back {
+  transform: rotateX(0deg);
+}
+.card-body {
+  perspective: 1000px;
+  padding: 0;
+}
+.img {
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+.omg-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white !important;
+  cursor: pointer;
+
+  border-style: solid;
+  background-color: #454545;
+  border-color: #000000;
+  border-width: 1px;
+  padding: 1vh;
+  font-size: 1.3rem;
+}
+.omg-button:hover {
+  background-color: #a9abac;
+  color: white !important;
+  transition: all 0.3s ease-in;
+}
+@media (max-width: 768px) {
+  .omg-button {
+    font-size: 1rem;
+  }
+  .omg-button:hover {
+    background-color: #a9abac;
+    color: white !important;
+    transition: all 0.3s ease-in;
+  }
+}

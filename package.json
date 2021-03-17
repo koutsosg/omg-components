@@ -27,7 +27,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build:lib": "babel src/library --out-dir lib --ignore src/__tests__/"
+    "build:lib": "babel src/library --out-dir lib --ignore src/__tests__/",
+    "postbuild:lib": "node src/scripts/postbuild.js"
   },
   "eslintConfig": {
     "extends": [

@@ -1,0 +1,44 @@
+.omg-navbar {
+  padding: 10px;
+  background-color: #fff;
+}
+
+.omg-navbar_logo {
+  height: 50px;
+}
+
+.omg-navbar_nav_s {
+  display: inline-flex !important;
+  flex-direction: row !important;
+}
+
+.top {
+  position: relative;
+}
+.topleft {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+.topright {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+.bottomleft {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+.bottomright {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  bottom: none;
+  transform: translate(-50%, -50%);
+}

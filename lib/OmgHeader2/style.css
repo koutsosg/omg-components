@@ -1,0 +1,19 @@
+.omg-navbar {
+  padding: 10px;
+  background-color: #fff;
+}
+
+.omg-navbar_logo {
+  height: 50px;
+}
+
+.omg-navbar_nav_s {
+  display: inline-flex;
+  flex-direction: row;
+}
+.ui.menu .item:before {
+  content: none;
+}
+.ui.menu:after {
+  content: none;
+}
