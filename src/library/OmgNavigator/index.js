@@ -16,9 +16,5 @@ const getRoutes = (links) => {
 };
 
 export const OmgNavigator = ({ links, container }) => {
-  return (
-    <Router>
-      <Switch>{container(getRoutes(links))}</Switch>
-    </Router>
-  );
+  return <Router>{container(<Switch>{getRoutes(links)}</Switch>)}</Router>;
 };

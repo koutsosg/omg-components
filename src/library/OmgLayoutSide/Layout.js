@@ -3,6 +3,7 @@ import React from "react";
 import "./style.css";
 import Social from "../OmgSocialSmall";
 import { Link } from "react-router-dom";
+import { Dropdown, List, Menu } from "semantic-ui-react";
 const Layout = ({
   links,
   slinks,
@@ -40,9 +41,33 @@ const Layout = ({
             {website.quicklinkt}
           </a>
           <hr />
-          {links.map((link) => (
-            <Link to={link.to}>{link.text}</Link>
-          ))}
+          <Menu vertical secondary className={`${classes.menu}`}>
+            {links.map((link) =>
+              !!link?.submenu ? (
+                <Dropdown
+                  text={link.text}
+                  className={`${classes.dropdown} item`}
+                >
+                  <Dropdown.Menu className={`${classes.dropdownmenu}`}>
+                    {/*   <Dropdown.Header>{link.submenu.text}</Dropdown.Header> */}
+                    {link?.submenu?.map((subitem) => (
+                      <Link className={`${classes.droplink}`} to={subitem.to}>
+                        <Dropdown.Item className={`${classes.dropitem}`}>
+                          {subitem.text}
+                        </Dropdown.Item>
+                      </Link>
+                    ))}
+                  </Dropdown.Menu>
+                </Dropdown>
+              ) : (
+                <Menu.Item className={`${classes.menuitem} item`}>
+                  <Link className={`${classes.menulink}`} to={link.to}>
+                    {link.text}
+                  </Link>
+                </Menu.Item>
+              )
+            )}
+          </Menu>
           <hr />
         </div>
         <footer className={`${classes.footer}`}>

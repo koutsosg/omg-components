@@ -44,25 +44,35 @@ const Library = () => (
 
 const navLinks = [
   { to: "/", text: "Home" },
-  { to: "/about", text: "About" },
-  { to: "/about", text: "About2" },
+  {
+    to: "/about",
+    text: "About",
+    submenu: [
+      { text: "hello", to: "/" },
+      { text: "world", to: "/about" },
+    ],
+  },
+  {
+    to: "/service",
+    text: "Service",
+    submenu: [
+      { text: "hello", url: "/" },
+      { text: "world", url: "/" },
+    ],
+  },
 ];
-const WebsiteContainer = (props) => (
-  <>
-    <Layout links={navLinks}>{props.children}</Layout>
-  </>
-);
 
 const links = [
   { to: "/", component: <Library /> },
   { to: "/about", component: <Index2 /> },
+  { to: "/service", component: <p>test</p> },
 ];
 
 function App() {
   return (
     <OmgNavigator
       links={links}
-      container={(children) => <WebsiteContainer children={children} />}
+      container={(children) => <Layout links={navLinks}>{children}</Layout>}
     />
   );
 }
