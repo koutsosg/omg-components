@@ -3,7 +3,7 @@ import OmgCarousel from "./OmgCarousel";
 import OmgFooter1 from "./OmgFooter1";
 import OmgHeader1 from "./OmgHeader1";
 import OmgHeader2 from "./OmgHeader2";
-import LayoutSide from "./OmgLayoutSide/Layout";
+import LayoutSide from "./OmgLayoutSide";
 import { OmgNavigator } from "./OmgNavigator";
 import Services from "./OmgServices";
 import Services2 from "./OmgServices2";

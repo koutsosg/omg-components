@@ -1,5 +1,5 @@
 import React from "react";
-import OmgLayoutSide from "../../library/OmgLayoutSide/Layout";
+import OmgLayoutSide from "../../library/OmgLayoutSide";
 import imgback from "../../assets/imgback.svg";
 import overlay from "../../assets/overlay.png";
 import logo from "../../../src/logo.svg";
