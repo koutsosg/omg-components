@@ -4,6 +4,7 @@ import "./style.css";
 import Social from "../OmgSocialSmall";
 import { Link } from "react-router-dom";
 import { Dropdown, Menu } from "semantic-ui-react";
+
 const Layout = ({
   links,
   slinks,
