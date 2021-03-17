@@ -10,6 +10,7 @@ import {
   NavItem,
   NavLink,
 } from "reactstrap";
+import "semantic-ui-css/semantic.min.css";
 import "./style.css";
 import { Link } from "react-router-dom";
 

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import { Dropdown, Menu, Icon } from "semantic-ui-react";
 import { Collapse } from "reactstrap";
+import "semantic-ui-css/semantic.min.css";
 import "./style.css";
 
 /**

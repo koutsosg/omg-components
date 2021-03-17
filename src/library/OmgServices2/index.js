@@ -1,4 +1,5 @@
 import React from "react";
+import "semantic-ui-css/semantic.min.css";
 import "./style.css";
 
 import { Grid, Segment, Image } from "semantic-ui-react";

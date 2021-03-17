@@ -1,7 +1,8 @@
 import React from "react";
-
+import "semantic-ui-css/semantic.min.css";
 import "./style.css";
 import { List, Icon } from "semantic-ui-react";
+
 const OmgFooter1 = ({
   titles = {},
   logo,
