@@ -111,4 +111,5 @@
 .image.avatar img {
   border-radius: 100%;
   width: 50%;
+  max-width: 100px;
 }
