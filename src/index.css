@@ -21,3 +21,15 @@ a:hover {
   text-decoration: none !important;
   background-color: transparent;
 }
+
+div.modal {
+  position: inherit;
+  top: auto;
+  left: auto;
+  z-index: inherit;
+  display: auto;
+  width: initial;
+  height: initial;
+  overflow: unset;
+  outline: 0;
+}
