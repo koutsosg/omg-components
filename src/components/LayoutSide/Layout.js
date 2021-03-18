@@ -11,6 +11,7 @@ const website = {
   p: "Edit <code>src/App.js</code> and save to reload.",
   quicklink: "https://reactjs.org",
   quicklinkt: "Learn React",
+  qlinktarget: "_blank" /* _self/_blank */,
 };
 const classes = {
   headermain: "omg-sidebar_layout",
