@@ -31,7 +31,8 @@ const Layout = ({
               alt={`${website.name} avatar`}
             />
           </Link>
-          <h1 className={`${classes.h}`}>{website.h2}</h1>
+          <h1 className={`${classes.h1}`}>{website.h1}</h1>
+          <h2 className={`${classes.h2}`}>{website.h2}</h2>
           <p className={`${classes.p}`}>{website.p}</p>
 
           <Link
