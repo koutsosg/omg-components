@@ -46,7 +46,7 @@ const website = {
   modal: <ModalExampleCloseIcon />,
 };
 const classes = {
-  headermain: "omg-sidebar_layout",
+  headermain: "omg-sidebar_layout ",
   headerin: "inner",
   avatarlink: "image avatar",
   avatarlogo: "",
