@@ -4,14 +4,13 @@ import "./index.css";
 import "semantic-ui-css/semantic.min.css";
 import { Divider } from "semantic-ui-react";
 import Header1 from "./components/Header1";
-import Header2 from "./components/Header2";
+
 import Services1 from "./components/Services1";
-import Services2 from "./components/Services2";
-import Footer1 from "./components/Footer1";
+
 import Carousel from "./components/Carousel";
-import Services3 from "./components/Services3";
+
 import Backtotop from "./components/Backtotop";
-import Layout from "./components/LayoutSide/Layout";
+
 function Index2() {
   return (
     <div className="App">

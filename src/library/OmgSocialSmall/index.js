@@ -5,7 +5,12 @@ const Social = ({ slinks, classes = {} }) => {
   return (
     <>
       {slinks.map((slink) => (
-        <a className={`${classes.sicon}`} href={slink.url} target="_blank">
+        <a
+          className={`${classes.sicon}`}
+          href={slink.url}
+          target="_blank"
+          rel="noreferrer"
+        >
           <Icon
             className={`${classes.siconl}`}
             circular={classes.circular}
