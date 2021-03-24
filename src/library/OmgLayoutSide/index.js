@@ -49,13 +49,17 @@ const Layout = ({
             {links.map((link) =>
               !!link?.submenu ? (
                 <Dropdown
+                  icon={false}
                   text={link.text}
-                  className={`${classes.dropdown} item`}
+                  className={`${classes.dropdown}  omg-layout_menu item`}
                 >
                   <Dropdown.Menu className={`${classes.dropdownmenu}`}>
                     {/*   <Dropdown.Header>{link.submenu.text}</Dropdown.Header> */}
                     {link?.submenu?.map((subitem) => (
-                      <Link className={`${classes.droplink}`} to={subitem.to}>
+                      <Link
+                        className={`${classes.droplink} omg-layout_menu`}
+                        to={subitem.to}
+                      >
                         <Dropdown.Item className={`${classes.dropitem}`}>
                           {subitem.text}
                         </Dropdown.Item>
@@ -64,8 +68,11 @@ const Layout = ({
                   </Dropdown.Menu>
                 </Dropdown>
               ) : (
-                <Menu.Item className={`${classes.menuitem} item`}>
-                  <Link className={`${classes.menulink}`} to={link.to}>
+                <Menu.Item className={`${classes.menuitem}`}>
+                  <Link
+                    className={`${classes.menulink}  omg-layout_menu`}
+                    to={link.to}
+                  >
                     {link.text}
                   </Link>
                 </Menu.Item>

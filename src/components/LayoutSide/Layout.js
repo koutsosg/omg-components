@@ -61,13 +61,13 @@ const classes = {
   copyright: "",
   copyrightl: "",
   children:
-    "omg-layout_main" /* omg-layout_main_pad omg-layout_main_1280pad omg-layout_main_736pad */,
+    "omg-layout_main  omg-layout_main_pad omg-layout_main_1280pad omg-layout_main_736pad",
   menu: "w-100 m-0 ",
   menuitem: "px-4",
-  menulink: "text-light justify-content-center",
-  dropdown: "text-light text-right px-0 ",
-  dropdownmenu: "w-100 omg-layout_dropitem justify-content-end ",
-  droplink: "text-right ",
+  menulink: "text-light",
+  dropdown: "text-light px-4 ",
+  dropdownmenu: "w-100  omg-layout_dropitem ",
+  droplink: "",
   dropitem: "",
 };
 /* 3108; */

@@ -36,9 +36,17 @@
     padding: 6em 3em 3em 3em;
   }
 }
+@media screen and (min-width: 981px) {
+  .omg-layout_menu {
+    text-align: right !important;
+  }
+}
 @media screen and (max-width: 980px) {
   .omg-layout_main_980pad {
     padding: 6em 4em;
+  }
+  .omg-layout_menu {
+    text-align: center !important;
   }
 }
 @media screen and (max-width: 736px) {
