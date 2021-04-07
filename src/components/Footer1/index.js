@@ -129,8 +129,8 @@ const Footer1 = () => {
   return (
     <>
       <OmgFooter1
-        website={website}
         titles={titles}
+        website={website}
         imgback={imgback}
         color={bcolor}
         classes={classes}

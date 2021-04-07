@@ -1,8 +1,8 @@
 .omg-layout_main {
-  margin-left: 35%;
+  margin-left: 25%;
   max-width: none;
 
-  width: calc(100% - 35%);
+  width: calc(100% - 25%);
 }
 
 .omg-layout_dropitem {
@@ -76,7 +76,7 @@
   position: fixed;
   text-align: right;
   top: 0;
-  width: 35%;
+  width: 25%;
 }
 @media screen and (max-width: 1280px) {
   .omg-sidebar_layout {
