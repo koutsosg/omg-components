@@ -82,7 +82,7 @@ const Layout = ({
           <hr />
         </div>
         <footer className={`${classes.footer}`}>
-          <Social classes={`${classes.sicon}`} slinks={slinks} />
+          <Social classes={classes} slinks={slinks} />
 
           <div className={`${classes.copyright}`}>
             © {new Date().getFullYear()}, -
