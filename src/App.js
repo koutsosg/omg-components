@@ -13,9 +13,11 @@ import Services3 from "./components/Services3";
 import Backtotop from "./components/Backtotop";
 import Layout from "./components/LayoutSide/Layout";
 import { OmgNavigator } from "./library/OmgNavigator";
+import Table from "./components/Table"
 import Index2 from "./index2";
 const Library = () => (
   <div className="App">
+    
     <Header1 />
     <Header2 />
     <Carousel />
@@ -27,6 +29,7 @@ const Library = () => (
     <Divider></Divider>
     <Footer1 />
     <Divider />
+    <Table />
     <Divider />
     <Divider />
     <Backtotop />
