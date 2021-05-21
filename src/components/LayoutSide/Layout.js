@@ -55,7 +55,7 @@ const classes = {
   p: "text-light",
   quicklink: "text-light App-link",
   footer: "innerfoot",
-  sicon: "gray",
+  sicon: "text-left",
   siconl: "",
   circular: true /* true / false */,
   copyright: "",

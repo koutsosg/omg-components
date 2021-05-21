@@ -1,6 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
-
 import "./style.css";
 
 const Services = ({ info = {}, services, color = "white", classes = {} }) => {

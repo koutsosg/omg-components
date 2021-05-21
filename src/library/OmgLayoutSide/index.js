@@ -3,7 +3,7 @@ import "semantic-ui-css/semantic.min.css";
 import "./style.css";
 import Social from "../OmgSocialSmall";
 import { Link } from "react-router-dom";
-import { Dropdown, Menu } from "semantic-ui-react";
+import { Dropdown, Menu, Icon } from "semantic-ui-react";
 
 const Layout = ({
   links,
@@ -82,8 +82,20 @@ const Layout = ({
           <hr />
         </div>
         <footer className={`${classes.footer}`}>
-          <Social classes={classes} slinks={slinks} />
-
+        {slinks.map((slink) => (
+        <a
+          className={`${classes.sicon}`}
+          href={slink.url}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Icon
+            className={`${classes.siconl}`}
+            circular={classes.circular}
+            name={slink.icon}
+          />
+        </a>
+      ))}
           <div className={`${classes.copyright}`}>
             © {new Date().getFullYear()}, -
             <Link to={website.url} className={`${classes.copyright}`}>
