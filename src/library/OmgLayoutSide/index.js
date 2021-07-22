@@ -81,21 +81,22 @@ const Layout = ({
           </Menu>
           <hr />
         </div>
+        <div>{website.frame}</div>
         <footer className={`${classes.footer}`}>
-        {slinks.map((slink) => (
-        <a
-          className={`${classes.sicon}`}
-          href={slink.url}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <Icon
-            className={`${classes.siconl}`}
-            circular={classes.circular}
-            name={slink.icon}
-          />
-        </a>
-      ))}
+          {slinks.map((slink) => (
+            <a
+              className={`${classes.sicon}`}
+              href={slink.url}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Icon
+                className={`${classes.siconl}`}
+                circular={classes.circular}
+                name={slink.icon}
+              />
+            </a>
+          ))}
           <div className={`${classes.copyright}`}>
             © {new Date().getFullYear()}, -
             <Link to={website.url} className={`${classes.copyright}`}>

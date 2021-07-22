@@ -8,7 +8,7 @@ import imag3 from "../../assets/02.jpg"
 import imag4 from "../../assets/03.jpg"
 
 const OmgTable = ({info = {},color, classes={}}) => {
-    return (
+    return ( 
         <div style={{ backgroundColor: color }} className={`${classes.maindiv}`}>
             <div className={`${classes.container}`} >
                 <h3 className={`${classes.title}`} >Titlos </h3>
