@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-const getRoutes = (links) => {
+const getRoutes = ({ links, pagenotfound }) => {
   const routes = links.map((link) => (
     <Route exact path={link.to}>
       {link.component}
@@ -10,7 +10,7 @@ const getRoutes = (links) => {
   return [
     ...routes,
     <Route path="*">
-      <p>404</p>
+      <div>{pagenotfound}</div>
     </Route>,
   ];
 };
