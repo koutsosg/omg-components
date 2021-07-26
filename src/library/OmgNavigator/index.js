@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-const getRoutes = ({ links }) => {
+const getRoutes = (links) => {
   const routes = links.map((link) => (
     <Route exact path={link.to}>
       {link.component}
