@@ -1,20 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-const getRoutes = (links) => {
+const getRoutes = (links, pnf) => {
   const routes = links.map((link) => (
     <Route exact path={link.to}>
       {link.component}
     </Route>
   ));
-  return [
-    ...routes,
-    <Route path="*">
-      <p>404</p>
-    </Route>,
-  ];
+  return [...routes, <Route path="*">{pnf.component}</Route>];
 };
 
-export const OmgNavigator = ({ links, container }) => {
-  return <Router>{container(<Switch>{getRoutes(links)}</Switch>)}</Router>;
+export const OmgNavigator = ({ links, container, pnf }) => {
+  return <Router>{container(<Switch>{getRoutes(links, pnf)}</Switch>)}</Router>;
 };
