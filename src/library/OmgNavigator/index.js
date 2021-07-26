@@ -10,7 +10,7 @@ const getRoutes = ({ links }) => {
   return [
     ...routes,
     <Route path="*">
-      <div>{links.pagenotfound}</div>
+      <div>{links.pnf}</div>
     </Route>,
   ];
 };
