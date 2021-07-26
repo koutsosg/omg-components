@@ -10,7 +10,7 @@ const getRoutes = (links) => {
   return [
     ...routes,
     <Route path="*">
-      <div>404</div>
+      <p>404</p>
     </Route>,
   ];
 };
