@@ -10,7 +10,7 @@ const getRoutes = ({ links }) => {
   return [
     ...routes,
     <Route path="*">
-      <div>{links.pnf}</div>
+      <div>{links.component}</div>
     </Route>,
   ];
 };
